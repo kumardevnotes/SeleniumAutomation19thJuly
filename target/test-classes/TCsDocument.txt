@@ -1,0 +1,22 @@
+
+AppUrl: https://www.speaklanguages.com/
+
+TC1: Verify landing page for SpeakLanguages
+
+Steps:
+
+1. Launch Chrome
+2. Launch application in Chrome https://www.speaklanguages.com
+3. Verify page title
+4. Verify header section ( logo, search field, search button, Log in and Sign up links)
+5. Verify footer section (app copy right, links at the bootm)
+
+TC2: Verify signup for SpeakLanguages
+
+Steps:
+
+1. Launch Chrome
+2. Launch application in Chrome https://www.speaklanguages.com
+3. Click on Sign up link on the header
+4. Fill the details in Sign up page and click on Signup button
+5. Verify that Sign up should be success with 'Thank you' message
