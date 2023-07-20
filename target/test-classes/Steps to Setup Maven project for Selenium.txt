@@ -1,16 +1,16 @@
 
-Steps to build a realtime selenium automation project using Java+Maven+Selenium+TestNG
+Steps to build a real-time Selenium automation project using Java+Maven+Selenium+TestNG
 
-1. Finalize the testcases that you have to automate (2 TCs)
-2.  Setup a project. And it could be Java --> Maven project
-3. Install TestNG plugin for eclipse (if not installed already)
-4. Create packages in above project
+Finalize the testcases that you have to automate (2 TCs)
+Setup a project. And it could be Java --> Maven project
+Install TestNG plugin for eclipse (if not installed already)
+Create packages in above project
                 - Package for App Pages
                 - Package for Test scripts
                 - Package for Testdata (Excel, Config.properties and etc)
                 - Create a folder for screenshots
-5. Update pom.xml with selenium and other dependencies
-6. Create a testng.xml file and configure TestNG class which has all of your TCs
+Update pom.xml with selenium and other dependencies
+Create a testng.xml file and configure TestNG class which has all of your TCs
 
 Page Object Model  - Best practice in automation -  POM
 
