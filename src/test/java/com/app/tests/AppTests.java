@@ -37,7 +37,7 @@ public class AppTests {
       System.out.println(isHeaderDisplayed);
       System.out.println(isFooterDisplayed);
       
-      isFooterDisplayed =  false;
+      //isFooterDisplayed =  false;
      
       if(pageTitleActual.equals(pageTitleExpected) && isHeaderDisplayed == true && isFooterDisplayed == true) {
     	  System.out.println("Landing page is loaded without issues");
@@ -56,7 +56,7 @@ public class AppTests {
 		 signUpPage.fillTheSignupForm();
 		 signUpPage.clickSignup();
 		 String successMessageExpected  = "Thank you — now activate your account!";
-		 successMessageExpected ="";
+		 //successMessageExpected ="";
 		 String successMessageActual  = signUpPage.getSignupSuccessMessage();
 		 System.out.println(successMessageActual);
 		  if(successMessageActual.equals(successMessageExpected)) {
