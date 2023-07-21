@@ -6,11 +6,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import com.automation.base.TestBase;
+import com.github.javafaker.Faker;
 
 public class SignupPage {
 
 	WebDriver driver = null;
 	TestBase testBase = null;
+	Faker faker = null;
 
 	By firstNameField = By.id("first_name");
 	By lastNameField = By.name("last_name");
@@ -27,13 +29,21 @@ public class SignupPage {
 
 	public SignupPage(TestBase testBase) {
 		this.testBase = testBase;
+		this.faker = new Faker();
 	}
 
-	public void fillTheSignupForm() {
-		testBase.enterText(firstNameField, "JohnKumar");
-		testBase.enterText(lastNameField, "LegendSam");
-		testBase.enterText(emailField, "johnlegenSam441990@gmail.com");
+	public void fillTheSignupForm() throws InterruptedException {
+		
+		String firstName = faker.name().firstName();
+		String lastName  =  faker.name().lastName();
+		String emailAddress =  faker.internet().emailAddress();
+		
+		testBase.enterText(firstNameField, firstName);
+		testBase.enterText(lastNameField, lastName);
+		testBase.enterText(emailField, emailAddress);
 		testBase.enterText(passwordField, "Meaning1122");
+		
+		Thread.sleep(4000);
 
 		WebElement genderWebElement = testBase.getWebElement(genderLocator);
 		Select genderDD = new Select(genderWebElement);
